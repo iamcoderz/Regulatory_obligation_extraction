@@ -1,0 +1,6 @@
+ (5) For purposes of paragraph (e) of this section, a U.S. branch, agency, or subsidiary of a foreign banking entity is considered to be located in the United States; however, the foreign bank that operates or controls that branch, agency, or subsidiary is not considered to be located in 
+
+  22  the United States solely by virtue of operating or controlling the U.S. branch, agency, or subsidiary
+
+ (6) For purposes of paragraph (e) of this section, unaffiliated market intermediary means an unaffiliated entity, acting as an intermediary, that is: (i) A broker or dealer registered with the SEC under section 15 of the Exchange Act or exempt from registration or excluded from regulation as such;  (ii)  A swap dealer registered with the CFTC under section 4s of the Commodity Exchange Act or exempt from registration or excluded from regulation as such;  (iii)  A security-based swap dealer registered with the SEC under section 15F of the Exchange Act or exempt from registration or excluded from regulation as such; or  (iv)  A futures commission merchant registered with the CFTC under section 4f of the Commodity Exchange Act or exempt from registration or excluded from regulation as such
+

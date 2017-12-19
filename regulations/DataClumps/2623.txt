@@ -1,0 +1,4 @@
+  61  customers of the trading desk.  For derivatives, other than options, and interest rate derivatives, value means gross notional value, for options, value means delta adjusted notional value, and for interest rate derivatives, value means 10-year bond equivalent value
+
+ Calculation Period: 30 days, 60 days, and 90 days
+

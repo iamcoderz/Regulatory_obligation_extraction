@@ -1,0 +1,37 @@
+prefix = "." # tells MeTA where to search for datasets
+
+dataset = "training" # a subfolder under the prefix directory
+corpus = "line.toml" # a configuration file for the corpus specifying its format & additional args
+uninvert = true
+
+index = "training-idx" # subfolder of the current working directory to place index files
+
+
+store-full-text = true
+
+
+stop-words = "lemur-stopwords.txt"
+
+[[analyzers]]
+method = "ngram-word"
+ngram = 1
+filter = [{type = "icu-tokenizer"}, {type = "lowercase"},{type = "ptb-normalizer"}]
+
+[[analyzers]]
+method = "ngram-word"
+ngram = 2
+filter = [{type = "icu-tokenizer"}, {type = "lowercase"},{type = "ptb-normalizer"}]
+
+[[analyzers]]
+method = "ngram-pos"
+ngram = 2
+filter = [{type = "icu-tokenizer"}, {type = "lowercase"}, {type = "ptb-normalizer"}]
+crf-prefix = "crf" 
+
+
+[[analyzers]]
+method = "tree"
+filter = [{type = "icu-tokenizer"},{type = "lowercase"}, {type = "ptb-normalizer"}]
+features = ["skel", "subtree"]
+tagger = "perceptron-tagger" #this line right here
+parser = "parser" 
