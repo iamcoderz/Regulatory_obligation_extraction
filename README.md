@@ -72,4 +72,24 @@ Provide the full name of the regularoty document
 
 Process would create an output called summary.txt which would contain all the key rules mentioned in the regulatory document.
 
+## Functions used in the Package
+
+Processpdf : process pdf function extracts the text content from the pdf document. Also this function deletes any previous run results from the operating folder.
+
+labeloutput_new : training algo - This function uses the training folder to create a trained SVM object that is used to label the text data from regulatory document that needs to be analyzed. This function also has an algorithm to clump data sets together based on document distance.All the data clumps as well as labelled data content are created by this function.
+
+Summarizer : The summarizer function consumes the data clumps created by training algo in a specific order by squencing the dataclumps.
+And creates local summaries and writes the summaries to a Summary document.
+
+Createconfig & Create Corpus functions are support functions that are used to create config files for processing.
+
+Implementation details:
+
+- Train a Document Classifier by labelling Phrases from the regulatory text as “Key Rule” or “TOC” or “Operating Requirement” ..etc..
+- Extract text content from a regulatory document using PyPDF2 module.
+- Use the trained classifier to label phrases from the document to be evaluated.
+- Data Clumping : From the labelled output, clump Co- Occurring Key Rules, Operating Requirements & Reporting Requirements. 
+Clumping of documents is performed based on document distance or feature distance measure.  In this current implementation a distance of ‘7’ is used to clump rules together.
+- Once Rules are clumped together a Summarizer algorithm is applied to summarize each rule. Each summarized rule is written to a document summary.
+- The above document summary will contain all the key rules discussed in the regulatory document.
 
