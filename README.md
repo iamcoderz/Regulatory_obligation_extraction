@@ -62,7 +62,8 @@ If you have downloaded the repository correctly you would see the following fold
 - training-config.toml
 
 ## Regulatory document
-Place any regulatory document in pdf format downloaded from regulator's website with in the main folder and the run the processpdf.py file through command prompt
+Place any regulatory document in pdf format downloaded from regulator's website with in the main folder and the run the processpdf.py file through command prompt ex: https://www.occ.treas.gov/news-issuances/news-releases/2013/nr-ia-2013-186b.pdf
+
 
 #processpdf.py
 
